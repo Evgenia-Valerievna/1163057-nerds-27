@@ -1,3 +1,93 @@
-b {
-    font-size: 20px;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto , sans-serif;
+    background-color: white;
+    
+}
+a {
+    text-decoration: none;
+  }
+  .main-header-logo:hover {
+    opacity: 0.8;
+}
+h1 {
+    background-color: #eeeeee;
+    color: black;
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 55px;
+    text-align: center;
+}
+
+.main-header-logo:active {
+    opacity: 0.3;
+}
+.main-navigation {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #000000;
+}
+.main-top {
+    background-color: #eeeeee;
+}
+.site-navigation li{
+    list-style: none;
+}
+.site-navigation a {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+}
+.site-navigation a:hover {
+    color: #fb565a;
+}
+.site-navigation a:active {
+    color: rgba(0,0,0,0.3);
+}
+.shop-item {
+    text-decoration: solid underline;
+    text-decoration-color: #fb565a;
+}
+
+.adress {
+    text-align: left;
+}
+.adress b {
+    color: #000000;
+    font-size: 18px;
+    line-height: 30px;
+}
+.adress p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 18px;
+}
+.adress-button {
+    outline: none;
+    width: 219px;
+    height: 50px;
+    background-color: #fb565a;
+}
+.adress-button span {
+    font: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+.networks {
+    list-style: none;
+}
+.footer-text {
+    color: #444444;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+}
+.footer-text span {
+    color: #000000;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 36px;
 }
