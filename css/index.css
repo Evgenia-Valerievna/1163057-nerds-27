@@ -57,6 +57,9 @@ a {
     text-align: left;
 }
 .slide-button {
+    font: inherit;
+    color: #ffffff;
+    text-transform: uppercase;
     width: 240px;
     height: 50px;
     background-color: #fb565a;
@@ -65,17 +68,8 @@ a {
     background-color: #e74246;
 }
 .slide-button:active {
-    background-color: #d7373b;
-}
-.slide-button span {
-    color: white;
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 500;
-    text-align: center;
-}
-.slide-button span:active {
     color: rgba(0,0,0,0.3);
+    background-color: #d7373b;
 }
 .main-navigation {
     font-size: 16px;
