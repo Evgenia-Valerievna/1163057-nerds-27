@@ -223,12 +223,13 @@ a {
 .adress {
     text-align: left;
 }
-.adress b {
+.adress address {
+    font: inherit;
     color: #000000;
     font-size: 18px;
     line-height: 30px;
 }
-.adress p {
+.adress a {
     color: #666666;
     font-size: 16px;
     line-height: 18px;
