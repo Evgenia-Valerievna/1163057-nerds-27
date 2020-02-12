@@ -25,6 +25,58 @@ a {
 .main-slide {
     list-style: none;
 }
+.slide-1 {
+    background-image: url(slide-picture-one.png);
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-attachment: fixed;
+}
+.slide-2 {
+    background-image: url(slide-picture-two.png);
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-attachment: fixed;
+}
+.slide-3 {
+    background-image: url(slide-picture-three.png);
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-attachment: fixed;
+}
+.slide-title {
+    color: #000000;
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 55px;
+    text-align: left;
+}
+.slide-text {
+    color: #283136;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+}
+.slide-button {
+    width: 240px;
+    height: 50px;
+    background-color: #fb565a;
+}
+.slide-button:hover {
+    background-color: #e74246;
+}
+.slide-button:active {
+    background-color: #d7373b;
+}
+.slide-button span {
+    color: white;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+.slide-button span:active {
+    color: rgba(0,0,0,0.3);
+}
 .main-navigation {
     font-size: 16px;
     font-weight: 500;
@@ -63,7 +115,7 @@ a {
     line-height: 30px;
 }
 .product-item p {
-    color: #charcoal-grey;
+    color: #283136;
 }
 .green-button {
     font: inherit;

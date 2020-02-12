@@ -50,6 +50,154 @@ h1 {
     text-decoration: solid underline;
     text-decoration-color: #fb565a;
 }
+.fieldset {
+    border: none;
+    text-align: left;
+}
+.legend {
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.selection-field {
+    list-style: none;
+}
+.radio-filter {
+    width: 25px;
+    height: 25px;
+    background-color: #4d4d4d;
+    opacity: 0.4;
+}
+.radio-filter:hover {
+    background-color: #4d4d4d;
+    opacity: 1; 
+}
+.radio-filter:disabled {
+    background-color:#4d4d4d;
+    opacity: 0.1;
+}
+.filter-input {
+    width: 27px;
+    height: 23px;
+    background-color: #4d4d4d;
+    opacity: 0.4;
+}
+.filter-input:hover {
+  background-color: #4d4d4d;
+  opacity: 1;
+}
+.filter-input:disabled {
+    background-color: #4d4d4d;
+    opacity: 0.1;
+}
+.filter-option {
+    color: #283136;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+}
+.filter-option:disabled {
+    color: rgba(40, 49, 54, 0.3);
+}
+.filter-button {
+    width: 260px;
+    height: 50px;
+    background-color: #eeeeee;
+    border: none;
+    outline: none;
+}
+.filter-button:hover {
+    background-color: #dfdfdf;
+}
+.filter-button:active {
+    background-color: #d5d5d5;
+}
+.filter-button span {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.filter-button span:active {
+    color: rgba(0,0,0,0.3);
+}
+.sort {
+    color: #000000;
+    opacity: 0.3;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    border: none;
+    outline: none;
+}
+.sort:hover {
+    color: #000000;
+    opacity: 0.6;
+}
+.sort:active,
+.sort:focus {
+    color: #000000;
+}
+.browser {
+    width: 360px;
+    height: 40px;
+    background-image: url(browser.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.12;
+}
+.browser:hover {
+    opacity: 1;
+}
+.page-description {
+    width: 360px;
+    height: 231px;
+    background-color: #eeeeee;
+    text-align: center;
+}
+.page-description b {
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.page-description b:hover {
+    color: #fb565a;
+}
+.page-description b:active {
+    color: rgba(0, 0, 0, 0.3);
+    opacity: 0.3;
+}
+.page-description p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 18px;
+}
+.browser-button {
+    width: 200px;
+    height: 50px;
+    background-color: #fb565a;
+    border: none;
+    outline: none;
+}
+.browser-button:hover {
+    background-color: #e74246;
+}
+.browser-button:active {
+    background-color: #d7373b ;
+}
+.browser-button span {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+}
 
 .adress {
     text-align: left;
