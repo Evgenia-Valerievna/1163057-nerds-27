@@ -9,25 +9,28 @@
   </head>
   <body>
     <header class="main-top">
-<nav class="main-navigation">
-  <a class="main-header-logo"  href="nerds-index.psd">
-  <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
-</a>
+      <nav class="main-navigation">
+        <a class="main-header-logo"  href="nerds-index.psd">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
+        </a>
   <ul class="site-navigation">
     <li><a href="">Студия</a></li>
     <li><a href="">Клиенты</a></li>
     <li><a href="inner.html">Магазин</a></li>
     <li><a href="">Контакты</a></li>
-    <li><img src="img/cart-icon.svg" width="15" height="15">
+  </ul>
+  <ul class="navigation-bascket">
+    <li class="navigation-bascket-items">
+      <img src="img/cart-icon.svg" width="15" height="15">
       <a href="">Корзина</a>
      </li>
-  </ul>
+     </ul>
 </nav>
 </header>
 
 <main>
   <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
-  <section class="main-top">
+  <section>
     <ul class="main-slide">
       <li>
     <div class="slide-1">
@@ -63,6 +66,7 @@
   </section>
   <section>
     <h2 class="visually-hidden">Продукты</h2>
+    <div class="products-block">
     <ul class="products">
       <li class="product-item">
         <img src="img/advantage-picture-red.png" width="300" height="146">
@@ -86,6 +90,7 @@
         <button class="yellow-button" type="submit"><span>ЗАКАЗАТЬ</span></button>
       </li>
     </ul>
+  </div>
   </section>
   <section class="description">
     <h2 class="description-title">Mы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
@@ -172,27 +177,28 @@
   </section>
   </main>
 
-  <footer>
-    <div class="footer">
-      <ul class="networks">
-      <li>
-      <a class="social-button" href="#">Вконтакте</a>
-      <img src=img/vk-icon.png width="26" height="15">
+  <footer class="footer">
+    <ul class="networks">
+      <li class="footer-icon-1">
+      <a class="social-button" href="#">
+      <img src=img/vk-icon.svg width="26" height="15">
+    </a>
     </li>
-  <li>
-      <a class="social-button" href="#">Фейсбук</a>
-      <img src=img/fb-icon.png width="12" height="22">
+  <li class="footer-icon-2">
+      <a class="social-button" href="#">
+      <img src=img/fb-icon.svg width="12" height="22">
+    </a>
     </li>
-  <li>
-      <a class="social-button" href="#">Инстаграм</a>
+  <li class="footer-icon-3">
+      <a class="social-button" href="#">
       <img src=img/insta-icon.svg width="21" height="21">
+    </a>
     </li>
     </ul>
-    </div>
-    <div class="footer-text">
-      <p><span>Давайте дружить, это выгодно!</span><br>
-      Скидка 10% для друзей из социальных сетей.</p>
-    </div>
+  <div class="footer-text">
+      <p><span>Давайте дружить, это выгодно!</span></p>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+  </div>
   </footer>
 </body>
 </html>
