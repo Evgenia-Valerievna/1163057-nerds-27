@@ -9,6 +9,12 @@ a {
     text-decoration: none;
 }
 h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 241px;
+    margin-top: -20px;
+    padding-top: 0px;
     background-color: #eeeeee;
     color: black;
     font-size: 55px;
@@ -16,6 +22,7 @@ h1 {
     line-height: 55px;
     text-align: center;
 }
+
 .main-header-logo {
     width: 160px;
     height: 65px;
@@ -39,10 +46,12 @@ h1 {
 }
 .main-top {
     background-color: #eeeeee;
-    min-height: 114px;
+    height: 114px;
+    margin-bottom: 0px;
     margin-bottom: 18px;
     padding-left: 140px;
     padding-right: 140px;
+    padding-bottom: 0px;
 }
 .site-navigation {
     display: flex;
@@ -338,15 +347,224 @@ h1 {
 .browser-button:active {
     background-color: #d7373b ;
 }
+.page-switch {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-left: 470px;
+    margin-right: 400px;
+    padding: 11px;
+}
+.page-switch li:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: white;
+    border: 2px solid #dbdbdb;
+    }
+.page-switch li:not(:last-child):not(:first-child){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #eeeeee;
+}
+.page-switch li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    height: 50px;
+    background-color: #eeeeee;
+}
+.page-switch li:not(:last-child) a {
+    color: black;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
 
+}
+.page-switch li a {
+    color: black;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.page-switch li:not(:last-child):hover {
+    background-color: #dfdfdf;
+}
+.page-switch li:hover {
+    background-color: #dfdfdf;
+}
+.page-switch li:not(:last-child):active {
+    background-color: #d5d5d5;
+}
+.page-switch li:not(:last-child) a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+.page-switch li:active {
+    background-color: #d5d5d5;
+}
+.page-switch li a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+.page-switch li:not(:last-child):focus {
+    background-color: white;
+    border: 2px solid #dbdbdb;
+}
+.write-us {
+    position: relative;
+    width: 860px;
+    
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 10px;
+    padding-top: 63px;
+    padding-bottom: 84px;
+    border: 2px solid black;
+    
+}
+.inf-block {
+    width: 760px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.write-us img {
+    opacity: 0.3;
+    position: absolute;
+    top: 11%;
+    left: 90%
+}
+.write-us img:hover {
+    opacity: 1;
+}
+.write-us img:active {
+    opacity: 0.1;
+}
+.textarea-block {
+    display: flex;
+    flex-direction: column;
+    
+}
+.write-us h2{
+    font-family: inherit;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 45px;
+    text-align: left;
+    margin: 0px;
+    padding-bottom: 49px;
+    
+}
+.write-us label {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    padding-bottom: 10px;
+}
+.write-us input {
+    width: 360px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid #d7dcde;
+    border-radius: 3px;
+}
+.write-us input:hover {
+    border: 2px solid #b4b9bb;
+}
+.write-us input:focus {
+    outline: none;
+    border: 2px solid #000000
+}
+.write-us input:invalid {
+    color: #e74246;
+    border: 2px solid #e74246
+}
+.write-us input::placeholder {
+    font-family: Roboto , sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(68,68,68,0.5);
+    padding-left: 16px;
+    padding-top: 18px;
+}
+.write-us input::placeholder:focus {
+    color: #444444;
+}
+.write-us textarea {
+    width: 760px;
+    height: 118px;
+    background-color: white;
+    border: 2px solid #d7dcde;
+    border-radius: 3px;
+    margin-bottom: 47px;
+}
+.write-us textarea:hover {
+    border: 2px solid #b4b9bb;
+}
+.write-us textarea:focus {
+    outline: none;
+    border: 2px solid #000000
+}
+.write-us textarea:invalid {
+    color: #e74246;
+    border: 2px solid #e74246
+}
+.write-us textarea::placeholder {
+    font-family: Roboto , sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(68,68,68,0.5);
+    padding-top: 14px;
+    padding-left: 15px;
+}
+.write-us button {
+    width: 260px;
+    height: 50px;
+    font-family: Roboto , sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: #fb565a;
+    color: #ffffff;
+    border: none;
+    outline: none; 
+}
 .adress {
+    position: absolute;
+    background-color: #ffffff;
+    top: 54px;
+    left: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 54px 50px 47px;
+    height: 208px;
     text-align: left;
 }
 .adress address {
-    font: inherit;
-    color: #000000;
+    font-family: Roboto;
+    text-align: left;
+    font-style: normal;
+    color: #666666;
+    font-size: 16px;
+    line-height: 18px;
+}
+.adress b {
+    font-family: Roboto;
     font-size: 18px;
     line-height: 30px;
+    text-align: left;
+    
 }
 .adress a {
     color: #666666;
@@ -354,6 +572,7 @@ h1 {
     line-height: 18px;
 }
 .adress-button {
+    text-transform: uppercase;
     outline: none;
     width: 219px;
     height: 50px;
@@ -364,6 +583,16 @@ h1 {
     font-size: 16px;
     font-weight: 500;
     color: white;
+}
+.bigmap .map-map-1{
+    width: 100%;
+    height: 416px;
+    position: relative;
+}
+.bigmap .map-marker-1 {
+    position: absolute;
+    right: 570px;
+    top: 90px;
 }
 .networks {
     display: flex;
