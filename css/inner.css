@@ -102,8 +102,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     min-width: 1160px;
-    margin-left: 140px;
-    margin-right: 140px;
+    width: 1160px;
+    margin: 0 auto;
 }
 
 .span {
@@ -125,16 +125,45 @@ h1 {
     padding-top: 13px;
     text-transform: uppercase;
 }
-.price-slider-back {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #eeeeee;
-    width: 261px;
-    height: 81px;
-    margin-top: 56px;
+.range-controls .scale {
+    height: 2px;
+    background-color: #d7dcde;
 }
-
+.range-controls {
+    position: relative;
+    background-color: #eeeeee;
+    width: 220px;
+    height: 41px;
+    padding-top: 39px;
+    margin-top: 56px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.range-controls .bar {
+    width: 70%;
+    height: 2px;
+    background: #00ca74;
+}
+.range-controls .toggle {
+    position: absolute;
+    top: 31px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    padding: 0;
+    border: 8px solid #ffffff;
+    background-color: #ababab;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    cursor: pointer;
+  }
+.range-controls .toggle-min {
+    left: 18px;
+}
+  
+.range-controls .toggle-max {
+    left: 160px;
+}
 .fieldset {
     border: none;
     text-align: left;
@@ -186,21 +215,31 @@ h1 {
 .selection-field-menu {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
     min-width: 760px;
+    width: 760px;
     list-style: none;
+    justify-content: space-between;
 }
 .image-brous {
+    position: relative;
     display: flex;
     flex-direction: column;
-    margin: 40px;
     margin-bottom: 33px;
+}
+.image-brous:hover .page-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .selection-field-second {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    margin-left: 400px;
+    margin-left: -40px;
 }
 .sort-points {
     min-width: 338px;
@@ -311,6 +350,7 @@ h1 {
     background-color: #eeeeee;
     text-align: center;
 }
+
 .page-description b {
     color: #000000;
     font-size: 18px;
@@ -330,16 +370,22 @@ h1 {
     line-height: 18px;
 }
 .browser-button {
-    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
     font-size: 16px;
     font-weight: 500;
     line-height: 18px;
     text-align: center;
-    width: 200px;
-    height: 50px;
     background-color: #fb565a;
     border: none;
     outline: none;
+}
+.browser-button a{
+    color: white;
+    text-align: center;
 }
 .browser-button:hover {
     background-color: #e74246;
@@ -350,10 +396,8 @@ h1 {
 .page-switch {
     display: flex;
     list-style: none;
+    width: 433px;
     justify-content: space-between;
-    margin-left: 470px;
-    margin-right: 400px;
-    padding: 11px;
 }
 .page-switch li:first-child {
     display: flex;
@@ -541,14 +585,14 @@ h1 {
 }
 .adress {
     position: absolute;
-    background-color: #ffffff;
     top: 54px;
     left: 140px;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 54px 50px 47px;
     height: 208px;
+    padding: 54px 50px 47px;
     text-align: left;
 }
 .adress address {
@@ -584,15 +628,15 @@ h1 {
     font-weight: 500;
     color: white;
 }
-.bigmap .map-map-1{
-    width: 100%;
+.bigmap {
+    width: 1440px;
     height: 416px;
     position: relative;
 }
-.bigmap .map-marker-1 {
+.map-marker-1 {
     position: absolute;
-    right: 570px;
-    top: 90px;
+    top: 89px;
+    left: 820px;
 }
 .networks {
     display: flex;
