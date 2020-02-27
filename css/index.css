@@ -3,19 +3,19 @@ body {
     padding: 0;
     font-family: Roboto , sans-serif;
     background-color: white;
-    
 }
 a {
     text-decoration: none;
 }
 .visually-hidden {
     position: absolute;
-    clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
-    margin: -1px;
-}
-
+    clip: rect(0, 0, 0, 0);
+  }
+.main-slide .slide {
+    display: none;
+  }
 .main-header-logo {
     width: 160px;
     height: 65px;
@@ -30,11 +30,10 @@ a {
     list-style: none;
 }
 .main-slide li {
-    position: relative;
     display: flex;
     width: 1440px;
     height: 431px;
-    margin-left: 100px;
+    
 }
 .slide-part {
     display: flex;
@@ -42,23 +41,14 @@ a {
     
 }
 .slide-1 {
-    background-image: url("C:/project/1163057-nerds-27/img/slide-picture-one.png");
-    background-repeat: no-repeat;
-    background-position: right;
     width: 698px;
     height: 413px;
 }
 .slide-2 {
-    background-image: url("C:/project/1163057-nerds-27/img/slide-picture-two.png");
-    background-repeat: no-repeat;
-    background-position: right;
     width: 663px;
     height: 430px;
 }
 .slide-3 {
-    background-image: url("C:/project/1163057-nerds-27/img/slide-picture-three.png");
-    background-repeat: no-repeat;
-    background-position: right;
     width: 759px;
     height: 411px;
 }
@@ -156,7 +146,42 @@ a {
     padding-left: 140px;
     padding-right: 140px;
 }
+.section-one {
+    position: relative;
+    width: 1440px;
+    height: 431px;
+    background-color: #eeeeee;
+    margin-top: -20px;
+}
+#product-1:checked ~ .site-wrapper #slide1,
+#product-2:checked ~ .site-wrapper #slide2,
+#product-3:checked ~ .site-wrapper #slide3 {
+  display: block;
+}
+.slider-controls {
+    position: absolute;
+    bottom: 63px;
+    left: 0;
+    z-index: 20;
+    
+    font-size: 0;
+  }
+.slider-controls label {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-right: 8px;
+  
+    vertical-align: top;
+  
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
 .main-slide {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 .products {
@@ -537,7 +562,8 @@ a {
 }
 .networks {
     display: flex;
-    min-width: 260px;
+    width: 260px;
+    margin-left: 140px;
     justify-content: space-around;
     align-items: center;
     list-style: none;
@@ -558,9 +584,7 @@ a {
 }
 .footer {
     display: flex;
-    min-height: 217px;
-    padding-right: 356px;
-    padding-left: 140px;
+    height: 217px;
     justify-content: space-between;
     align-items: center;
 }

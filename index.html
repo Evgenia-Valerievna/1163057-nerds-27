@@ -9,6 +9,9 @@
     <link href="css/index.css" rel="stylesheet">
   </head>
   <body>
+    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
     <header class="main-top">
       <nav class="main-navigation">
         <a class="main-header-logo"  href="index.html">
@@ -31,10 +34,16 @@
 
 <main>
   <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
-  <section>
+  <div class="site-wrapper">
+  <section class="section-one">
+    <div class="slider-controls">
+      <label for="product-1">Первый</label>
+      <label for="product-2">Второй</label>
+      <label for="product-3">Третий</label>
+    </div>
     <ul class="main-slide">
-      <li>
-    <div class="slide-part">
+      <li class="slide" id="slide1">
+        <div class="slide-part">
     <p class="slide-title">Долго, дорого,<br>
       скрупулезно.</p>
       <p class="slide-text">Математически выверенный дизайн<br>
@@ -43,7 +52,7 @@
     </div>
     <div class="slide-1"></div>
     </li>
-    <li>
+    <li class="slide" id="slide2">
      <div class="slide-part">
       <p class="slide-title">Любим математику<br>
       как никто другой</p>
@@ -52,9 +61,9 @@
       <a class="slide-button" href="#">узнать больше</a>
     </div>
     <div class="slide-2"></div>
-    </div>
+    
     </li>
-    <li>
+    <li class="slide" id="slide3">
     <div class="slide-part">
       <p class="slide-title">Только ночь,<br>
       только хардкор</p>
@@ -64,9 +73,10 @@
     </div>
     <div class="slide-3"></div>
   </li>
-  </div>
+  
   </ul>
   </section>
+</div>
   <section>
     <h2 class="visually-hidden">Продукты</h2>
     <div class="products-block">
