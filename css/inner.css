@@ -629,9 +629,10 @@ h1 {
     color: white;
 }
 .bigmap {
-    width: 1440px;
+    width: 100%;
     height: 416px;
     position: relative;
+    margin: 0 auto;
 }
 .map-marker-1 {
     position: absolute;
