@@ -11,8 +11,8 @@ a {
     position: absolute;
     width: 1px;
     height: 1px;
-    clip: rect(0, 0, 0, 0);
-  }
+}
+
 .main-slide .slide {
     display: none;
   }
@@ -26,9 +26,6 @@ a {
 .main-header-logo:active {
     opacity: 0.3;
 }
-
-
-
 .slide-button {
     font: inherit;
     color: #ffffff;
@@ -60,6 +57,7 @@ a {
     margin-bottom: 18px;
     color: #000000;
 }
+
 .site-navigation {
     display: flex;
     min-width: 438px;
@@ -103,12 +101,14 @@ a {
 }
 .main-top {
     background-color: #eeeeee;
+    min-width: 1160px;
     min-height: 114px;
     margin-bottom: 18px;
     padding-left: 140px;
     padding-right: 140px;
 }
-.relative-sect {
+
+.container {
     position: relative;
     width: 1440px;
     height: 430px;
@@ -118,46 +118,49 @@ a {
 }
 .slider-controls {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 299px;
+    left: 597px;
     z-index: 2;
     font-size: 0;
   }
 .slider-controls label {
+    position: relative;
     display: inline-block;
-    width: 17px;
-    height: 17px;
-    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    margin: 17px;
     vertical-align: top;
-    background-color: transparent;
+    background-color: white;
     border: 2px solid #ffffff;
     border-radius: 50%;
     cursor: pointer;
-  }
-.slider {
-    list-style: none;
-    margin-top: -20px;
-    padding: 0;
 }
 .slide {
     position: absolute;
     display: none;
 }
-#product-1:checked ~ .relative-sect #slide1,
-#product-2:checked ~ .relative-sect #slide2,
-#product-3:checked ~ .relative-sect #slide3 {
-  display: block;
+#product-1:checked ~ .slider-controls label:nth-of-type(1),
+#product-2:checked ~ .slider-controls label:nth-of-type(2),
+#product-3:checked ~ .slider-controls label:nth-of-type(3) {
+    background-image: url("C:/project/1163057-nerds-27/img/active-button.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8px 8px;
 }
-#product-1:checked ~ .relative-sect label[for="product-1"],
-#product-2:checked ~ .relative-sect label[for="product-2"],
-#product-3:checked ~ .relative-sect label[for="product-3"] {
-  background-color: #ffffff;
+
+#product-1:checked ~ .slider .slide:nth-child(1),
+#product-2:checked ~ .slider .slide:nth-child(2),
+#product-3:checked ~ .slider .slide:nth-child(3) {
+    display: block;
 }
 .click {
     display: flex;
-    background-color: #eeeeee;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
     width: 100%;
     height: 430px;
+    margin-left: 140px;
 }
 .slide p:first-child {
     font-size: 55px;
@@ -171,9 +174,7 @@ a {
     line-height: 24px;
     margin-bottom: 42px;
 }
-.text {
-    margin-left: 140px;
-}
+
 .pict-1 {
     background: url("C:/project/1163057-nerds-27/img/slide-picture-one.png");
     width: 698px;
@@ -216,8 +217,11 @@ a {
 .product-item p {
     color: #283136;
 }
+
 .green-button {
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font: inherit;
     outline: none;
     width: 160px;
@@ -225,6 +229,12 @@ a {
     background-color: #00ca74;
     border-radius: 5px;
     margin-top: 35px;
+}
+.green-button a {
+    color: white;
+}
+.green-button a:active {
+    color: rgba(255, 255, 255, 0.3);
 }
 .green-button:hover {
     background-color: #00bc6c;
@@ -234,14 +244,22 @@ a {
     background-color: #00aa62;
 }
 .red-button {
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font: inherit;
     outline: none;
     width: 160px;
-    height: 50px;
+    height: 50px; 
     background-color: #fb565a;
     border-radius: 5px;
     margin-top: 35px;
+}
+.red-button a {
+    color: white;
+}
+.red-button a:active {
+    color: rgba(255, 255, 255, 0.3);
 }
 .red-button:hover {
     background-color: #e74246;
@@ -251,7 +269,9 @@ a {
     background-color: #d7373b;
 }
 .yellow-button {
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font: inherit;
     outline: none;
     width: 160px;
@@ -259,6 +279,12 @@ a {
     background-color: #efc84a;
     border-radius: 5px;
     margin-top: 35px;
+}
+.yellow-button a {
+    color: white;
+}
+.yellow-button a:active {
+    color: rgba(255, 255, 255, 0.3);
 }
 .yellow-button:hover {
     background-color: #eab534;
@@ -560,8 +586,6 @@ a {
     color: white;
 }
 .bigmap {
-    width: 100%;
-    height: 416px;
     position: relative;
     margin: 0 auto;
 }
