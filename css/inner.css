@@ -37,7 +37,6 @@ h1 {
 }
 .main-header-logo {
     width: 160px;
-    height: 65px;
 }
 .main-header-logo:hover {
     opacity: 0.8;
@@ -61,8 +60,7 @@ h1 {
     height: 114px;
     margin-bottom: 0px;
     margin-bottom: 18px;
-    padding-left: 140px;
-    padding-right: 140px;
+    
     padding-bottom: 0px;
 }
 .site-navigation {
@@ -651,7 +649,6 @@ h1 {
 .networks {
     display: flex;
     width: 260px;
-    margin-left: 140px;
     justify-content: space-around;
     align-items: center;
     list-style: none;
