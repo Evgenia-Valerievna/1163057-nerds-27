@@ -17,7 +17,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 241px;
+    min-height: 241px;
     margin-top: -20px;
     padding-top: 0px;
     background-color: #eeeeee;
@@ -57,10 +57,9 @@ h1 {
 }
 .main-top {
     background-color: #eeeeee;
-    height: 114px;
+    min-height: 114px;
     margin-bottom: 0px;
     margin-bottom: 18px;
-    
     padding-bottom: 0px;
 }
 .site-navigation {
@@ -124,8 +123,6 @@ h1 {
     background-color: #eeeeee;
     width: 80px;
     height: 38px;
-    
-    
 }
 .fixprice {
     display: flex;
@@ -472,7 +469,6 @@ h1 {
 .write-us {
     position: relative;
     width: 860px;
-    
     display: flex;
     flex-direction: column;
     padding-left: 100px;
