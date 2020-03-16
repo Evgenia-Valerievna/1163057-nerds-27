@@ -181,20 +181,20 @@ a {
 }
 
 .pict-1 {
-    background: url("C:/project/1163057-nerds-27/img/slide-picture-one.png");
+    background: url("../img/slide-picture-one.png");
     width: 698px;
     height: 430px;
     background-repeat: no-repeat;
     
 }
 .pict-2 {
-    background: url("C:/project/1163057-nerds-27/img/slide-picture-two.png");
+    background: url("../img/slide-picture-two.png");
     width: 663px;
     height: 430px;
     background-repeat: no-repeat;
 }
 .pict-3 {
-    background: url("C:/project/1163057-nerds-27/img/slide-picture-three.png");
+    background: url("../img/slide-picture-three.png");
     width: 759px;
     height: 430px;
     background-repeat: no-repeat;
