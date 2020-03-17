@@ -27,7 +27,22 @@ h1 {
     line-height: 55px;
     text-align: center;
 }
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
 
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .site-navigation li:nth-child(3) {
     position: relative;
 }
@@ -187,6 +202,11 @@ h1 {
     text-align: left;
     text-transform: uppercase;
 }
+.selection-field-1 {
+    list-style: none;
+    min-height: 140px;
+    width: 154px;
+}
 .selection-field {
     list-style: none;
 }
@@ -259,12 +279,17 @@ h1 {
 .selection-field-second .legend{
     margin-left: 40px;
 }
-.radio-filter {
-    width: 25px;
-    height: 25px;
-    background-color: #4d4d4d;
+
+.radio-filter + label {
+    background: url("C:/project/1163057-nerds-27/img/radio-off.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: 25px 25px;
+    background-position: left;
     opacity: 0.4;
+    user-select: none;
 }
+
 .radio-filter:hover {
     background-color: #4d4d4d;
     opacity: 1;
@@ -293,6 +318,7 @@ h1 {
     font-size: 16px;
     line-height: 20px;
     text-align: left;
+    margin-bottom: 15px;
 }
 
 .filter-option label {
