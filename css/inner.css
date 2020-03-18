@@ -27,7 +27,7 @@ h1 {
     line-height: 55px;
     text-align: center;
 }
-input[type="checkbox"].visually-hidden,
+
 input[type="radio"].visually-hidden {
   position: absolute;
 
@@ -37,11 +37,6 @@ input[type="radio"].visually-hidden {
   border: 0;
   padding: 0;
 
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 .site-navigation li:nth-child(3) {
     position: relative;
@@ -212,12 +207,16 @@ input[type="radio"].visually-hidden {
 }
 .container-2 {
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 62px;
+    flex-direction: column;
+    min-width: 154px;
+    justify-content: space-between;
+    color: #283136;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 15px;
 }
-.container-2 input{
-    margin-left: -40px;
-}
+
 .container-2 legend {
     margin-left: -40px;
     margin-bottom: 21px;
@@ -281,15 +280,37 @@ input[type="radio"].visually-hidden {
 }
 
 .radio-filter + label {
-    background: url("C:/project/1163057-nerds-27/img/radio-off.svg");
-    background-repeat: no-repeat;
+    display: inline-block;
     cursor: pointer;
-    background-size: 25px 25px;
-    background-position: left;
-    opacity: 0.4;
-    user-select: none;
+    position: relative;
+    font-size: 16px;
 }
-
+input[type=radio] {
+    display: none;
+}
+.radio-filter + label:before {
+        content: "";
+       background-image: url("../img/radio-off.svg");
+       background-repeat: no-repeat;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        left: 0;
+        position: absolute;
+        
+    }
+input[type=radio]:checked + label:before {
+        content: "";
+        background-image: url("../img/radio-on.svg");
+       background-repeat: no-repeat;
+       width: 25px;
+        height: 25px;
+        font-size: 30px;
+        text-align: center;
+        line-height: 18px;
+    }
+    
+           
 .radio-filter:hover {
     background-color: #4d4d4d;
     opacity: 1;
@@ -313,20 +334,6 @@ input[type="radio"].visually-hidden {
     opacity: 0.1;
 }
 
-.filter-option {
-    color: #283136;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-.filter-option label {
-    min-width: 142px;
-}
-.filter-option:disabled {
-    color: rgba(40, 49, 54, 0.3);
-}
 .filter-button {
     width: 260px;
     height: 50px;
