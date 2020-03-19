@@ -41,7 +41,7 @@
       <section class="section-form">
       <form method="post" action="https://echo.htmlacademy.ru">
         <div class="price-field">
-          <p class="legend">Стоимость:</p>
+          <p class="legend prc">Стоимость:</p>
           <div class="range-controls">
             <div class="scale">
               <div class="bar"></div>
@@ -56,9 +56,9 @@
           <div class="fixprice"><p>от</p> <span class="span">0</span> <p>до</p> <span class="span">15000</span></p></div>
           </div>
           
-          <p class="legend">Сетка:</p>
+          <p class="legend st">Сетка:</p>
           <div class="container-2">
-        <input class="radio-filter" type="radio" name="grid" value="adaptive" id="adaptive-grid" checked> 
+            <input class="radio-filter" type="radio" name="grid" value="adaptive" id="adaptive-grid" checked> 
           <label for="adaptive-grid">Адаптивная</label>
         
         
@@ -68,41 +68,38 @@
        
          <input  class="radio-filter" type="radio" name="grid" value="rubbery" id="rubbery-grid">
           <label for="rubbery-grid">Резиновая</label>
-          
-        
-        
       </div>
+      
+      
+      <p class="legend spc">Особенности:</p>
       <div class="container-two">
-      <ul class="selection-field">
-      <legend class="legend">Особенности:</legend>
-       <li class="filter-option">
-          <input class="filter-input" type="checkbox" name="slider" id="specialty-slider" checked>
+        <input class="filter-input" type="checkbox" name="slider" id="specialty-slider" checked>
           <label for="specialty-slider">Слайдер</label>
-        </li>
-        <li class="filter-option">
+        
+        
           <input class=" filter-input" type="checkbox" name="advantage" id="specialty-advantage">
           <label for="specialty-advantage">Блок преимуществ</label>
-        </li>
-        <li class="filter-option">
+        
           <input class="filter-input" type="checkbox" name="news" id="specialty-news" checked>
           <label for="specialty-news">Новости</label>
-        </li>
-        <li class="filter-option" >
+        
+        
           <input class="filter-input" type="checkbox" name="galery" id="specialty-galery">
           <label for="specialty-galery">Галерея</label>
-        </li>
-        <li class="filter-option">
+        
+        
           <input class="filter-input" type="checkbox" name="basket" id="specialty-basket">
           <label for="specialty-basket">Корзина</label>
-        </li>
+        
       </div>
   <button class="filter-button" type="submit"><span>Показать</span></button>
     </form>
     </section>
     
     <section>
+      
       <ul class="selection-field-second">
-      <b class="legend">Сортировать:</b>
+        <p class="legend srt">Сортировать:</p>
       <div class="sort-points">
       <li>
         <a class="sort" href="#">по цене</a>
@@ -226,7 +223,8 @@
 </div>
   
 
-  <section class="letter-form">
+  <section>
+    <div class="letter-form">
     <form class="write-us" method="post" action="https://echo.htmlacademy.ru">
       <h2>Напишите нам</h2>
       <img src="img/close-cross.svg" alt="Кнопка закрытия окна">
@@ -246,8 +244,10 @@
   </div>
     <button type="submit">Отправить</button>
   </form>
+</div>
   </section>
-    <section>
+    
+  <section>
       <div class="bigmap">
         <img src="img/2.png" width="100%" height="416" alt="Карта местонахождения студии">
       <div class="adress">

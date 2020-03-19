@@ -436,10 +436,46 @@ a {
     position: relative;
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
     margin-top: 46px;
     margin-bottom: 44px;
     list-style: none;
+}
+.logo-list a {
+    position: relative;
+}
+.htm::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 52px;
+    left: 250px;
+    bottom: 18px;
+    background-color: black;
+    opacity: 0.1;
+}
+.brd::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 52px;
+    left: 250px;
+    bottom: 30px;
+    background-color: black;
+    opacity: 0.1;
+}
+.pnk::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 52px;
+    left: 250px;
+    bottom: 2px;
+    background-color: black;
+    opacity: 0.1;
 }
 .logo-list::before {
     content: "";
@@ -462,32 +498,37 @@ a {
     height: 2px;
     background-color: black;
     opacity: 0.1;
+    
+}
+.letter-form {
+    display: none;
+    margin-left: 240px;
+    margin-right: 240px;
 }
 .write-us {
     position: relative;
-    width: 860px;
-    
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding-left: 100px;
-    padding-right: 10px;
+    padding-right: 100px;
     padding-top: 63px;
     padding-bottom: 84px;
     border: 2px solid black;
+    background-color: white;
     
 }
 .inf-block {
-    width: 760px;
+    width: 680px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
 }
 .write-us img {
     opacity: 0.3;
     position: absolute;
-    top: 11%;
-    left: 90%
+    top: 78px;
+    right: 90px;
 }
 .write-us img:hover {
     opacity: 1;
@@ -498,7 +539,7 @@ a {
 .textarea-block {
     display: flex;
     flex-direction: column;
-    
+    justify-content: space-between;
 }
 .write-us h2{
     font-family: inherit;
@@ -506,24 +547,25 @@ a {
     font-weight: 500;
     line-height: 45px;
     text-align: left;
-    margin: 0px;
-    padding-bottom: 49px;
-    
+    margin-top: 0px;
+    margin-bottom: 49px;
 }
+
 .write-us label {
     font-family: inherit;
     font-size: 16px;
     font-weight: bold;
     line-height: 18px;
-    padding-bottom: 10px;
+    margin-bottom: 12px;
 }
 .write-us input {
-    width: 360px;
-    height: 50px;
     background-color: white;
     border: 2px solid #d7dcde;
     border-radius: 3px;
+    min-height: 50px;
+    min-width: 300px;
 }
+
 .write-us input:hover {
     border: 2px solid #b4b9bb;
 }
@@ -541,18 +583,18 @@ a {
     line-height: 18px;
     color: rgba(68,68,68,0.5);
     padding-left: 16px;
-    padding-top: 18px;
+    
 }
 .write-us input::placeholder:focus {
     color: #444444;
 }
 .write-us textarea {
-    width: 760px;
-    height: 118px;
+    width: 675px;
+    min-height: 118px;
     background-color: white;
     border: 2px solid #d7dcde;
     border-radius: 3px;
-    margin-bottom: 47px;
+    
 }
 .write-us textarea:hover {
     border: 2px solid #b4b9bb;
@@ -585,10 +627,11 @@ a {
     color: #ffffff;
     border: none;
     outline: none;
+    margin-top: 47px;
 }
 .adress {
     position: absolute;
-    top: 54px;
+    top: 136px;
     left: 130px;
     background-color: #ffffff;
     display: flex;
@@ -636,10 +679,13 @@ a {
     position: relative;
     margin: 0 auto;
 }
+.bigmap img:first-child {
+    margin-top: 82px;
+}
 .map-marker-1 {
     position: absolute;
     top: 89px;
-    left: 820px;
+    left: 770px;
     
 }
 .networks {
